@@ -43,7 +43,7 @@ RUN cat /awvs/xaa /awvs/xab /awvs/xac /awvs/xad /awvs/xae /awvs/xaf > /awvs/awvs
 RUN chmod 777 /awvs/awvs.sh \
     && unzip -d /awvs/awvs_listen /awvs/awvs_listen.zip \
     && chmod 444 /awvs/awvs_listen/license_info.json \
-    && cp /awvs/awvs_listen/wvsc /home/acunetix/.acunetix/v_210628104/scanner/ \
+#    && cp /awvs/awvs_listen/wvsc /home/acunetix/.acunetix/v_210628104/scanner/ \
     && cp /awvs/awvs_listen/license_info.json /home/acunetix/.acunetix/data/license/ \
     && cp /awvs/awvs_listen/wa_data.dat /home/acunetix/.acunetix/data/license/ \
     && chown acunetix:acunetix /home/acunetix/.acunetix/data/license/wa_data.dat
